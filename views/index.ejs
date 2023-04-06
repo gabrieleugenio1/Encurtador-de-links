@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main>
+        <section>
+          <h1>Encurtador de links</h1>
+          <div>
+            <h3>Insira o link que você quer encurtar: Coloque com o https://</h3>
+            <h4>Exemplo: https://urldosite.com/</h4>
+            <form action="/enviarLink" method="post">
+              <div style="display: flex;">
+                <label for="link">Insira o link:&ensp;</label>
+                <input type="text" name="link" id="link"  minlength="10" required><br>
+                <input style="margin-left: 1rem;" type="submit" onclick="return confirm('O link está certo?')" value="Gerar link">        
+              </div>
+            </form>
+          </div>        
+        </section>
+    <main>
+  </body>
+</html>
